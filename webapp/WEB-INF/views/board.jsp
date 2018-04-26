@@ -11,7 +11,7 @@
 </head>
 <body>
 	<form action="${ pageContext.servletContext.contextPath }/board" method="post">
-		<table border="1" width="510">
+		<table border="1" style="width:510px;">
 			<tr>
 				<td>이름</td>
 				<td><input type="text" name="name"></td>
@@ -31,7 +31,7 @@
 	<c:set var="totalCount" value="${fn:length(list) }" />
 	<% pageContext.setAttribute("newline", "\n"); %>
 	<c:forEach items="${ list }" var="vo" varStatus="status">
-	<table width="510" border="1">
+	<table style="width:510px;" border="1">
 		<tr>
 			<td>[${ totalCount - status.index }]
 			</td>
